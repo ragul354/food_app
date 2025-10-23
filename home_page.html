@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home_page</title>
+    <link rel="icon" type="logo/png" href="logo/1726860081445.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home_page">
+        <div class="back">
+            <a href="login_form.html" class="fa-solid fa-chevron-left"></a>
+            <h1><b>Wholesome Foods & Mindful Munching</b></h1>
+            <i class="fa-regular fa-2x fa-user"></i>
+        </div>
+        <div class="searchbar">
+            <h1><input type="text" class="enlarged-input" placeholder="🔍Search"></h1>
+        </div>
+        <div class="search">
+            <div class="food-list">
+                <div class="grid-item">
+                    <img src="food img/Chocolate_Chip_Cookies-.png">
+                    <p id="food_name">Chocolate Chip Cookies</p>
+                    <p id="price">₹30</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/Avacoda_smoothie.png">
+                    <p id="food_name">Avacoda Smoothie</p>
+                    <p id="price">₹300</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/tea.png">
+                    <p id="food_name">Masala tea</p>
+                    <p id="price">₹40</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/fried_momos.png">
+                    <p id="food_name">Spicy Momos</p>
+                    <p id="price">₹100</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/Sprouts.png">
+                    <p id="food_name">Sprout</p>
+                    <p id="price">₹50</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/Steamed_Rice_Cake.png">
+                    <p id="food_name">Steamed Rice Cake</p>
+                    <p id="price">₹60</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/Rice___Pork__Dumplings.png">
+                    <p id="food_name">Steamed Rice Dumplings</p>
+                    <p id="price">₹60</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+                <div class="grid-item">
+                    <img src="food img/Paal_Kozhukattai.png">
+                    <p id="food_name">Milk Dumplings</p>
+                    <p id="price">₹110</p>
+                    <i id="heartIcon" class="fa-regular fa-heart icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const heartIcons = document.querySelectorAll('.icon');
+
+    heartIcons.forEach(heartIcon => {
+        heartIcon.addEventListener('click', function() {
+            if (heartIcon.classList.contains('fa-regular')) {
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.classList.add('fa-solid');
+            } else {
+                heartIcon.classList.remove('fa-solid');
+                heartIcon.classList.add('fa-regular');
+            }
+        });
+    });
+</script>
+
+</html>
